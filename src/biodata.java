@@ -5,7 +5,7 @@ public class biodata {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Masukkan Nama: ");
-        String nama = input.nextLine(); // Ambil input nama [cite: 241, 242]
+        String nama = input.nextLine(); // Ambil input nama
 
         System.out.print("Masukkan Tahun Lahir: ");
         int tahunLahir = input.nextInt(); // Ambil input tahun
