@@ -1,8 +1,8 @@
-import java.util.Scanner; 
+import java.util.Scanner;
 
 public class City {
     public static void main(String[] args) {
-        
+
         Scanner input = new Scanner(System.in);
         boolean running = true;
 
@@ -12,21 +12,20 @@ public class City {
             System.out.println("2. View All Buildings");
             System.out.println("3. Exit");
             System.out.print("Please select an option: ");
-            
-            int choice = input.nextInt();
-            input.nextLine(); // Membersihkan sisa Enter (buffer)
 
+            int choice = input.nextInt();
+            input.nextLine();
             switch (choice) {
                 case 1:
                     System.out.print("Enter Building Name: ");
                     String name = input.nextLine();
-                    
+
                     System.out.print("Enter Building Address: ");
                     String address = input.nextLine();
-                    
+
                     System.out.print("Enter Number of Floors: ");
                     int floors = input.nextInt();
-                    input.nextLine(); // Membersihkan buffer lagi
+                    input.nextLine();
 
                     System.out.println("\nBuilding Name: " + name);
                     System.out.println("Building Address: " + address);
@@ -40,7 +39,7 @@ public class City {
 
                 case 3:
                     System.out.println("Exiting program...");
-                    running = false; 
+                    running = false;
                     break;
 
                 default:
@@ -48,6 +47,6 @@ public class City {
                     break;
             }
         }
-        input.close(); // Mencegah memory leak
+        input.close();
     }
 }

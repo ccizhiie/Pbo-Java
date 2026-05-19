@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.time.LocalDate;
-public class biodata {
+public class belajar {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
